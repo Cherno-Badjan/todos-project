@@ -43,7 +43,7 @@ describe('app routes', () => {
       const dbTodo = {
         ...todo,
         id: 5,
-        owner_id: 4,
+        owner_id: 3,
       };
 
       const data = await fakeRequest(app)
@@ -63,7 +63,7 @@ describe('app routes', () => {
           "id": 5,
           "todo": "Wash Dishes",
           "completed": false,
-          "owner_id": 4
+          "owner_id": 3
         },
       ];
 
@@ -82,7 +82,7 @@ describe('app routes', () => {
         id: 5,
         todo: "Wash Dishes",
         completed: true,
-        owner_id: 4
+        owner_id: 3
       };
 
       await fakeRequest(app)
